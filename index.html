@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Autonoma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+    <h1>El DOM (Document Object Model)</h1>
+
+    <nav>
+        <a href="#definicion">Definición</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#objetivos">Objetivos y Utilidad</a>
+    </nav>
+    </header>
+
+
+    <main>
+
+    <section id="definicion">
+        <h2>Definición del DOM</h2>
+        <p>
+        El DOM (Document Object Model) es un estándar creado por el W3C que, aunque no es exclusivo
+        de JavaScript, está íntimamente relacionado con este lenguaje, ya que lo utiliza de forma
+        continua para acceder y modificar las páginas web de manera dinámica. Según este modelo, el
+        navegador representa en memoria los elementos de una página web, cuyo elemento superior es
+        el objeto document (Escarcena, 2020, p. 46).
+        </p>
+    </section>
+
+
+    <section id="caracteristicas">
+        <h2>Características Principales</h2>
+        <p>
+        Una de las características principales del DOM es que organiza los elementos de una página
+        web en forma de árbol de nodos, donde se distinguen relaciones de padre e hijo entre los
+        distintos elementos. Por ejemplo, el elemento bodyactúa como nodo superior del
+        que dependen elementos como header, nav, section,
+        aside y footer (Escarcena, 2020, p. 41).
+        </p>
+
+
+        <img src="" alt="Diagrama del arbol de nodos del DOM">
+
+        <p>
+        Dentro de esta estructura, el DOM distingue principalmente dos tipos de nodo: los nodos de
+        tipo Element, que corresponden a los elementos definidos por las etiquetas
+        HTML (como div o h1), y los nodos de tipo Text,
+        que representan el contenido textual dentro de un nodo elemento (Escarcena, 2020, p. 41).
+        Además, el DOM proporciona propiedades para recorrer este árbol y acceder a los distintos
+        nodos, como parentNode (nodo padre), childNodes (nodos hijos),
+        firstChild y lastChild (primer y último nodo hijo).
+        </p>
+    </section>
+
+    <section id="objetivos">
+        <h2>Objetivos y Utilidad dentro del Desarrollo Web</h2>
+        <p>
+        El principal objetivo del DOM dentro del desarrollo web es permitir que lenguajes como
+        JavaScript puedan acceder y modificar el contenido de una página de forma dinámica,
+        identificando con precisión cada elemento del documento (Escarcena, 2020, p. 46).
+        </p>
+        <p>
+        Para cumplir esta utilidad, el objeto document ofrece métodos que permiten
+        localizar elementos concretos, siendo getElementById() el modo más frecuente
+        de acceder a un nodo específico del documento (Escarcena, 2020, p. 41). Una vez ubicado el
+        elemento, el DOM permite modificarlo mediante propiedades como innerHTML, que
+        cambia el contenido HTML de un elemento, o ,setAttribute(), que modifica el
+        valor de un atributo. Gracias a esto, el DOM resulta fundamental para crear páginas web
+        interactivas, ya que posibilita que el contenido cambie en respuesta a las acciones del
+        usuario, sin necesidad de recargar la página completa.
+        </p>
+    </section>
+
+    </main>
+
+
+    <footer>
+    <p>Trabajo elaborado con base en Escarcena, M. (2020). <em>Programación páginas Web: JavaScript y PHP</em> (1.ª ed.). RA-MA Editorial.</p>
+    <p><a href="https://elibro.net/es/lc/itsqmet/titulos/222656" target="_blank">Ver fuente</a></p>
+    </footer>
+
+</body>
+</html>
